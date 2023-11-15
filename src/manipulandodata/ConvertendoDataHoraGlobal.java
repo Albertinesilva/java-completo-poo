@@ -24,13 +24,14 @@ class ConvertendoDataHoraGlobal {
     LocalDateTime r4 = LocalDateTime.ofInstant(instante, ZoneId.of("Portugal"));
     
     limparTela();
+    System.out.println("\t=== Convertendo Data/Hora Global Para Local ===\n");
     System.out.println("\tr1 = " + r1);
     System.out.println("\tr2 = " + r2);
     System.out.println("\tr3 = " + r3);
     System.out.println("\tr4 = " + r4);
 
     System.out.println("\tdata2: " + data2.getDayOfMonth() + "/" + data2.getMonthValue() + "/" + data2.getYear());
-    
+
     System.out.println("\tdata3: " + data3.getDayOfMonth() + "/" 
                                    + data3.getMonthValue() + "/" 
                                    + data3.getYear() + " " 
