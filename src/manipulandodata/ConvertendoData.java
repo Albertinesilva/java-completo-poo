@@ -1,6 +1,5 @@
 package manipulandodata;
 
-import java.sql.Date;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -20,7 +19,7 @@ public class ConvertendoData {
     DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
     DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss").withZone(ZoneId.systemDefault());
-    DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
+    // DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
     DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
 
     limparTela();
