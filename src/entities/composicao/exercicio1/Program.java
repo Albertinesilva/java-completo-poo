@@ -1,11 +1,11 @@
-package entities.composicao;
+package entities.composicao.exercicio1;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.composicao.enums.WorkerLevel;
+import entities.composicao.exercicio1.enums.WorkerLevel;
 
 public class Program {
 

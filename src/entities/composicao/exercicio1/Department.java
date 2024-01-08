@@ -1,4 +1,4 @@
-package entities.composicao;
+package entities.composicao.exercicio1;
 
 public class Department {
 
