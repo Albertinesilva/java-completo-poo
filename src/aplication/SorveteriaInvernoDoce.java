@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class SorveteriaInvernoDoce {
 
+    public static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) throws Exception {
 
         Locale.setDefault(Locale.US);
-        Scanner scan = new Scanner(System.in);
 
         String[] sabores = new String[15];
         double[] precos = new double[15];
@@ -41,12 +42,10 @@ public class SorveteriaInvernoDoce {
 
         imprimirItemMaisCaro(itens, precosItens);
 
-        scan.close();
-
     }
 
     public static String lerSabores(String[] sabores) {
-        Scanner scan = new Scanner(System.in);
+
         System.out.print("Informe o sabor do sorvete: ");
         String sabor = scan.nextLine();
 
@@ -54,7 +53,6 @@ public class SorveteriaInvernoDoce {
     }
 
     public static int lerQuantidadePedido(String sabor) {
-        Scanner scan = new Scanner(System.in);
         System.out.printf("Informe a quantidade de pedidos para o sabor %s: ", sabor);
         int quantidade = scan.nextInt();
 
@@ -62,7 +60,6 @@ public class SorveteriaInvernoDoce {
     }
 
     public static double lerValorSorvete(String sabor) {
-        Scanner scan = new Scanner(System.in);
         System.out.printf("Informe o valor do sorvete de %s: ", sabor);
         double valor = scan.nextDouble();
 

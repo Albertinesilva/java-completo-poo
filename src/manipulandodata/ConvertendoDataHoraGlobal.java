@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Scanner;
-import java.time.ZoneId;
+// import java.time.ZoneId;
 
 class ConvertendoDataHoraGlobal {
   public static void main(String[] args) {
