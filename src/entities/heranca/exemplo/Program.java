@@ -40,6 +40,19 @@ public class Program {
       acc5.updateBalance();
       System.out.println("Update!");
     }
+
+    System.out.println("===== Polimorfismo =====");
+    Account a = new BusinessAccount(1025, "Alex", 1000.00, 200.0);
+    Account x  = new Account(1020, "Alex", 1000.0);
+    Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+
+    a.withdraw(50.0);
+    x.withdraw(50.0);
+    y.withdraw(50.0);
+
+    System.out.println(a.getBalance());
+    System.out.println(x.getBalance());
+    System.out.println(y.getBalance());
   }
 
   public static void limparTela() {
