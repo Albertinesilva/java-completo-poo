@@ -14,12 +14,11 @@ public class Program {
     Account acc1 = bacc;
     System.out.println(acc1.getHolder());
     Account acc2 = new BusinessAccount(1003, "Bob", 1000.00, 500.0);
-
     //Sobreposição ou sobrescrita (override) é a implementação de um método de uma superclasse na subclasse (sobrescrever).
     acc2.withdraw(200.0);
+
     System.out.println(acc2.getBalance());
     Account acc3 = new SavingsAccount(1004, "Anna", 1000.00, 0.01);
-    
     //Sobreposição ou sobrescrita (override) é a implementação de um método de uma superclasse na subclasse (sobrescrever).
     acc3.withdraw(200.0);
     System.out.println(acc3.getBalance());
