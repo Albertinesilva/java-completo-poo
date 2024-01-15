@@ -1,4 +1,4 @@
-package arquivos.formamanual;
+package arquivos.leituramanual;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
