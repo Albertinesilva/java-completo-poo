@@ -28,7 +28,7 @@ public class Program {
       System.out.println("Error in reservation: Check-out date must be after check-in date \n");
 
     } else {
-      Reservation reservation = new Reservation(number, checkIn, checkOut);
+      Reservation reservation = new Reservation(1, number, checkIn, checkOut);
       System.out.println("Reservation: " + reservation);
 
       System.out.println("Enter data to update the reservation: ");
