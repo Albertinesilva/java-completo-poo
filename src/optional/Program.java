@@ -36,7 +36,7 @@ public class Program {
     // Lançando uma exceção se o valor estiver ausente
     try {
       String value = emptyOptional.orElseThrow(() -> new IllegalArgumentException("Valor ausente"));
-
+      System.out.println("Valor: " + value);
     } catch (IllegalArgumentException e) {
       System.out.println(e.getMessage()); // Saída: Valor ausente
     }
