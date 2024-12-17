@@ -1,7 +1,7 @@
 package interfaces.seminterface.models;
 
 public class Invoice {
-  
+
   private Double basicPayment;
   private Double tax;
 
@@ -29,7 +29,7 @@ public class Invoice {
     this.tax = tax;
   }
 
-  public Double getTotalPayment(){
-    return getBasicPayment() - getTax();
+  public Double getTotalPayment() {
+    return getBasicPayment() + getTax();
   }
 }

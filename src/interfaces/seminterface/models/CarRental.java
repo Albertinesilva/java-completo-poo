@@ -3,7 +3,7 @@ package interfaces.seminterface.models;
 import java.time.LocalDateTime;
 
 public class CarRental {
-  
+
   private LocalDateTime start;
   private LocalDateTime finish;
 

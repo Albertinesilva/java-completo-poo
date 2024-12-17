@@ -7,10 +7,13 @@ import java.util.Scanner;
 
 import interfaces.seminterface.models.CarRental;
 import interfaces.seminterface.models.Vehicle;
+import interfaces.seminterface.services.BrazilTaxService;
+import interfaces.seminterface.services.RentalService;
 
 public class Program {
 
   public static void main(String[] args) {
+    limparTela();
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
 
@@ -25,6 +28,22 @@ public class Program {
     LocalDateTime finish = LocalDateTime.parse(sc.nextLine(), fmt);
 
     CarRental cr = new CarRental(start, finish, new Vehicle(carModel));
+
+    System.out.print("Entre com o preço por hora: ");
+    double pricePerHour = sc.nextDouble();
+    System.out.print("Entre com o preço por dia: ");
+    double pricePerDay = sc.nextDouble();
+
+    BrazilTaxService taxService = new BrazilTaxService();
+    RentalService rentalService = new RentalService(pricePerHour, pricePerDay, taxService);
+
+    rentalService.processInvoice(cr);
+
+    System.out.println("FATURA:");
+    System.out.println("Pagamento básico: " + String.format("%.2f", cr.getInvoice().getBasicPayment()));
+    System.out.println("IMPOSTO: ");
+    System.out.println("Taxa: " + String.format("%.2f", cr.getInvoice().getTax()));
+    System.out.println("Pagamento total: " + String.format("%.2f", cr.getInvoice().getTotalPayment()));
 
     sc.close();
 
