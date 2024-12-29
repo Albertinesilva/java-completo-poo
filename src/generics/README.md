@@ -96,6 +96,7 @@ map.put(2, "Two");
 for (Map.Entry<Integer, String> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " -> " + entry.getValue());
 }
+````
 
 ## Conclusão
 
@@ -107,4 +108,4 @@ Os generics trazem uma série de vantagens, como:
 - **Facilidade no uso de coleções:** Simplifica o uso de estruturas como listas e mapas.
 
 Isso resulta em código mais limpo, seguro e eficiente.
-````
+
