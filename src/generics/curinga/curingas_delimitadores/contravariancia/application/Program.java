@@ -1,4 +1,4 @@
-package generics.curinga.contravariancia.application;
+package generics.curinga.curingas_delimitadores.contravariancia.application;
 
 import java.util.ArrayList;
 import java.util.List;
