@@ -1,4 +1,4 @@
-package generics.set.exemplo.application;
+package generics.collection.set.exemplo.application;
 
 import java.util.HashSet;
 import java.util.Set;

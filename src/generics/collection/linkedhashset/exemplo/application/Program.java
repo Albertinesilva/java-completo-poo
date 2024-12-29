@@ -1,4 +1,4 @@
-package generics.linkedhashset.exemplo.application;
+package generics.collection.linkedhashset.exemplo.application;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

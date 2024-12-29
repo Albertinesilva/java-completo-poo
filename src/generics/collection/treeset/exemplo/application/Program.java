@@ -1,4 +1,4 @@
-package generics.treeset.exemplo.application;
+package generics.collection.treeset.exemplo.application;
 
 import java.util.Arrays;
 import java.util.Set;
