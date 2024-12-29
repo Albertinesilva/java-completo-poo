@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import generics.generics2.entities.Product;
 import generics.generics2.services.CalculationService;
 
 public class Program {
@@ -14,7 +15,7 @@ public class Program {
     limparTela();
     Locale.setDefault(Locale.US);
 
-    List<Integer> list = new ArrayList<>();
+    List<Product> list = new ArrayList<>();
 
     String path = "D:\\UDEMY POO\\Exercicios\\src\\generics\\generics2\\temp\\in.txt";
 
@@ -22,12 +23,13 @@ public class Program {
 
 			String line = br.readLine();
 			while (line != null) {
-				list.add(Integer.parseInt(line));
+        String[] fields = line.split(",");
+				list.add(new Product(fields[0], Double.parseDouble(fields[1])));
 				line = br.readLine();
 			}
 
-			Integer x = CalculationService.max(list);
-			System.out.println("Max:");
+			Product x = CalculationService.max(list);
+			System.out.println("Most expensive:");
 			System.out.println(x);
 
 		} catch (IOException e) {
