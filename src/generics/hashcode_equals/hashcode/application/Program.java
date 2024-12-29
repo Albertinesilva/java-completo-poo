@@ -1,14 +1,14 @@
-package generics.curinga.hashcode_equals.equals.application;
+package generics.hashcode_equals.hashcode.application;
 
 public class Program {
-
   public static void main(String[] args) {
     
     limparTela();
     String a = "Maria";
     String b = "Alex";
 
-    System.out.println(a.equals(b));
+    System.out.println(a.hashCode());
+    System.out.println(b.hashCode());
   }
 
   public static void limparTela() {
