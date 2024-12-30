@@ -1,4 +1,4 @@
-package generics.collection.map.exemplos.application;
+package generics.collection.map.exemplo1.application;
 
 import java.util.Map;
 import java.util.TreeMap;
