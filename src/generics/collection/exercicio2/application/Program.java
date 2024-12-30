@@ -17,7 +17,14 @@ public class Program {
     int n = sc.nextInt();
     for (int i = 0; i < n; i++) {
       int number = sc.nextInt();
-      a.add(number);
+      if (a.contains(number)) {
+        limparTela();
+        System.out.println("This student ID already exists in the collection.");
+      } else {
+        a.add(number);
+        limparTela();
+        System.out.println("Student ID added successfully.");
+      }
     }
 
     System.out.print("How many students for course B? ");
