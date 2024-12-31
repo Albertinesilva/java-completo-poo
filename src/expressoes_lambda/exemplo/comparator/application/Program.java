@@ -17,6 +17,31 @@ public class Program {
     list.add(new Product("Tablet", 400.0));
     list.add(new Product("Ar-condicionado", 500.0));
 
+
+    // Usando MyComparator como classe separada
+    list.sort(new MyComparator());
+
+    /**
+    * @description Cria um Comparator objeto de classe anônima para comparar produtos com base no nome.
+    * A comparação é feita ignorando diferenças entre maiúsculas e minúsculas, convertendo os nomes para letras maiúsculas.
+    * 
+    * @param p1 O primeiro produto a ser comparado.
+    * @param p2 O segundo produto a ser comparado.
+    * 
+    * @return Um valor inteiro que indica a ordem dos produtos:
+    *         - Um número negativo se p1 for menor que p2.
+    *         - Zero se forem iguais.
+    *         - Um número positivo se p1 for maior que p2.
+    */
+    Comparator<Product> compa = new Comparator<Product>() {
+      @Override
+      public int compare(Product p1, Product p2) {
+        return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+      }
+    };
+
+    list.sort(compa);
+
     /**
     * @description Cria um comparador para ordenar produtos com base no nome em ordem alfabética.
     * A comparação ignora diferenças entre maiúsculas e minúsculas, convertendo os nomes para letras maiúsculas.
