@@ -17,9 +17,28 @@ public class Program {
     list.add(new Product("Tablet", 400.0));
     list.add(new Product("Ar-condicionado", 500.0));
 
+    /**
+    * @description Cria um comparador para ordenar produtos com base no nome em ordem alfabética.
+    * A comparação ignora diferenças entre maiúsculas e minúsculas, convertendo os nomes para letras maiúsculas.
+    * 
+    * @param p1 O primeiro produto a ser comparado.
+    * @param p2 O segundo produto a ser comparado.
+    * 
+    * @return Um valor inteiro que indica a ordem dos produtos:
+    *         - Um número negativo se p1 for menor que p2.
+    *         - Zero se forem iguais.
+    *         - Um número positivo se p1 for maior que p2.
+    */
+    @SuppressWarnings("unused")
     Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
-    list.sort(comp);
+    /**
+     * @description Ordena a lista de produtos em ordem alfabética com base no nome. A ordenação é feita ignorando diferenças 
+     * entre maiúsculas e minúsculas.
+     * @param p1 O primeiro produto a ser comparado.
+     * @param p2 O segundo produto a ser comparado.
+     */
+    list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
     System.out.println("\nProducts:");
     for (Product p : list) {
