@@ -1,6 +1,7 @@
 package expressoes_lambda.exemplo.comparator.application;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import expressoes_lambda.exemplo.comparator.entities.Product;
@@ -16,7 +17,19 @@ public class Program {
     list.add(new Product("Tablet", 400.0));
     list.add(new Product("Ar-condicionado", 500.0));
 
-    list.sort(new MyComparator());
+    /**
+    * Cria um comparador personalizado para ordenar os produtos por nome em ordem alfabética. 
+    * p1 O primeiro produto a ser comparado.
+    * p2 O segundo produto a ser comparado.
+    */
+    Comparator<Product> comp = new Comparator<Product>() {
+      @Override
+      public int compare(Product p1, Product p2) {
+        return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+      }
+    };
+
+    list.sort(comp);
 
     System.out.println("\nProducts:");
     for (Product p : list) {
