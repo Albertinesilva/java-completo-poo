@@ -56,6 +56,18 @@ public class Product {
     return true;
   }
 
+  // Método estático: acessível diretamente pela classe.
+  // Recebe um parâmetro Product e verifica o critério no preço do produto passado.
+  public static boolean staticProductPredicate(Product p) {
+    return p.getPrice() >= 100.00;
+  }
+
+  // Método não estático: acessível apenas por instâncias de Product.
+  // Verifica o critério no preço da própria instância.
+  public boolean nonStaticProductPredicate() {
+    return price >= 100.00;
+  }
+
   @Override
   public String toString() {
     return "Product [name = " + name + ", price = " + price + "]";
