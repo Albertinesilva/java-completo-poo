@@ -1,4 +1,4 @@
-package expressoes_lambda.programacao_funcional.calculo_lambda.application;
+package expressoes_lambda.calculo_lambda.programacao_imperativa.application;
 
 import java.util.Arrays;
 
