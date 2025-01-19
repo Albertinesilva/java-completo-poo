@@ -38,7 +38,6 @@ public class Program {
     // Remove os produtos da lista cujo preço da instância seja maior ou igual a 100.00.
     list.removeIf(Product::nonStaticProductPredicate);
 
-
     // Define uma variável Predicate que representa uma condição.
     // Remove os produtos da lista cujo preço seja maior ou igual ao valor mínimo definido.
     double min = 100; 
@@ -49,10 +48,30 @@ public class Program {
     // Remove os produtos da lista cujo preço seja maior ou igual ao valor mínimo definido.
     list.removeIf(p -> p.getPrice() >= min);
 
-
     for (Product p : list) {
       System.out.println(p);
     }
+
+    System.out.println("\nRemovendo produtos com preço maior ou igual a 100 usando expressão lambda inline:");
+    
+    // Limpa a lista e adiciona novos produtos.
+    list.clear();
+    list.add(new Product("Computer", 120.50));
+    list.add(new Product("TV", 90.90));
+    list.add(new Product("Notebook", 150.00));
+
+    /* A linha abaixo usa uma expressão lambda inline para remover elementos da lista.
+     A expressão lambda `p -> p.nonStaticProductPredicate()` funciona da seguinte forma:
+     - Para cada elemento `p` do tipo `Product` na lista, o método `nonStaticProductPredicate`
+     é chamado na instância `p`.
+     - O método `nonStaticProductPredicate` retorna um booleano que indica se o produto 
+     atende ao critério (neste caso, se o preço é maior ou igual a 100).
+     - Se o método retornar `true`, o elemento é removido da lista.
+     Essa abordagem é concisa e aproveita a funcionalidade do método `removeIf` junto com 
+     expressões lambda, uma funcionalidade introduzida no Java 8. */
+    list.removeIf(p -> p.nonStaticProductPredicate());
+
+    list.forEach(System.out::println);
   }
 
   public static void limparTela() {
