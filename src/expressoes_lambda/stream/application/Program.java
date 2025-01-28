@@ -3,7 +3,6 @@ package expressoes_lambda.stream.application;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Program {
