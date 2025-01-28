@@ -1,4 +1,4 @@
-package expressoes_lambda.stream.Operacoes_intermediarias;
+package expressoes_lambda.stream.operacoes_intermediarias;
 
 import java.util.Arrays;
 import java.util.List;
