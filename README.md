@@ -91,7 +91,7 @@ Durante o curso, foram abordados:
 
 Além disso, a aplicação de conhecimentos práticos através de projetos consolida os conceitos aprendidos e prepara para desafios reais no desenvolvimento de software.
 
-## 📁 Estrutura dos Projeto
+## 📁 Estrutura dos Projetos
 
 ```plaintext
 src/
@@ -143,7 +143,7 @@ src/
     └── (tratamento de exceções)
 ```
 🔧 Modificações e Adaptações
-- Durante o curso, realizei diversas modificações e adaptações nos projetos, incluindo:
+Durante o curso, realizei diversas modificações e adaptações nos projetos, incluindo:
 
 - Organização dos Packages: Reestruturação das pastas e arquivos para melhorar a organização e a legibilidade do código.
 
