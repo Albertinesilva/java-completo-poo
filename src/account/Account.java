@@ -1,4 +1,4 @@
-package ccount;
+package account;
 
 public class Account {
     
