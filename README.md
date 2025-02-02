@@ -91,6 +91,66 @@ Durante o curso, foram abordados:
 
 Além disso, a aplicação de conhecimentos práticos através de projetos consolida os conceitos aprendidos e prepara para desafios reais no desenvolvimento de software.
 
-## 📌 Autor
+## 📁 Estrutura dos Projeto
 
-👤 **Albert Silva**
+```plaintext
+src/
+├── _aulas_pdfs/
+│   └── (arquivos PDF com conteúdos teóricos das aulas)
+├── _conceitos_basicos/
+│   └── (exemplos de conceitos fundamentais de programação)
+├── account/
+│   └── (lógica relacionada ao gerenciamento de contas bancárias)
+├── aplication/
+│   └── (ponto principal de inicialização da aplicação)
+├── arquivos/
+│   └── (manipulação de arquivos: leitura e gravação)
+├── comportamento_de_memoria_arrays_listas/
+│   └── (estudos sobre comportamento de arrays e listas na memória)
+├── composicao/
+│   └── (exemplos de composição em programação orientada a objetos)
+├── employee/
+│   └── (gerenciamento de dados e operações de funcionários)
+├── enums/
+│   └── (definições de enumeradores)
+├── estudent/
+│   └── (operações sobre dados de estudantes)
+├── expressoes_lambda/
+│   └── (exemplos de expressões lambda)
+├── funcoes/
+│   └── (boas práticas e exemplos de funções)
+├── generics/
+│   └── (uso de tipos genéricos)
+├── heranca_e_polimorfismo/
+│   └── (demonstração de herança e polimorfismo)
+├── interfaces/
+│   └── (definições e uso prático de interfaces)
+├── manipulando_data/
+│   └── (operações de manipulação de datas)
+├── matriz/
+│   └── (exemplos de operações com matrizes)
+├── optional/
+│   └── (tratamento seguro de valores nulos com Optional)
+├── product/
+│   └── (gestão de dados de produtos)
+├── rectangle/
+│   └── (modelagem de retângulos)
+├── string/
+│   └── (manipulação de strings)
+├── teste/
+│   └── (implementação de testes)
+└── tratamento_de_excecoes/
+    └── (tratamento de exceções)
+```
+🔧 Modificações e Adaptações
+- Durante o curso, realizei diversas modificações e adaptações nos projetos, incluindo:
+
+- Organização dos Packages: Reestruturação das pastas e arquivos para melhorar a organização e a legibilidade do código.
+
+- Interface de Exibição no Console: Ajustes na interface para proporcionar uma melhor experiência visual e usabilidade.
+
+- Implementação de Novos Recursos: Adição de funcionalidades adicionais e melhorias nos projetos existentes.
+
+#### 📌 Autor
+
+👨‍💻 **Albert Silva**
