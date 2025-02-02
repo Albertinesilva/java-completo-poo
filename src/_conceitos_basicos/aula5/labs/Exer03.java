@@ -6,6 +6,7 @@ public class Exer03 {
 
 	public static void main(String[] args) {
 
+		cleanScreen();
 		Scanner scan = new Scanner(System.in);
 
 		boolean verdadeiro = false;
@@ -20,7 +21,7 @@ public class Exer03 {
 				verdadeiro = true;
 				System.out.println("Nome inserido com sucesso!");
 			} else {
-				System.out.println("Nome precisa no m�nimo 3 caractere!\n");
+				System.out.println("Nome precisa no mínimo 3 caractere!\n");
 				System.out.println("Informe o seu Nome: ");
 				nome = scan.next();
 			}
@@ -49,18 +50,18 @@ public class Exer03 {
 		verdadeiro = false;
 		int salario;
 
-		System.out.println("Informe o sal�rio: ");
+		System.out.println("Informe o salário: ");
 		salario = scan.nextInt();
 
 		while (!verdadeiro) {
 
 			if (salario > 0) {
 				verdadeiro = true;
-				System.out.println("Sal�rio inserido com sucesso!");
+				System.out.println("Salário inserido com sucesso!");
 
 			} else {
-				System.out.println("Sal�rio invalido!\n");
-				System.out.println("Informe o sal�rio: ");
+				System.out.println("Salário invalido!\n");
+				System.out.println("Informe o salário: ");
 				idade = scan.nextInt();
 			}
 		}
@@ -103,12 +104,30 @@ public class Exer03 {
 				estadoCivil = scan.next();
 			}
 		}
-		System.out.println("As seguintes informa��es foram coletadas:");
-		
+		System.out.println("As seguintes informações foram coletadas:");
+
 		System.out.println("Nome: " + nome);
 		System.out.println("idade: " + idade);
-		System.out.println("Sal�rio: " + salario);
+		System.out.println("Salário: " + salario);
 		System.out.println("Sexo: " + sexo);
 		System.out.println("Estado Civil: " + estadoCivil);
+
+		scan.close();
+	}
+
+	public static void cleanScreen() {
+		try {
+			final String os = System.getProperty("os.name");
+
+			if (os.contains("Windows")) {
+				new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+			} else {
+				System.out.print("\033[H\033[2J");
+				System.out.flush();
+			}
+		} catch (final Exception e) {
+			// Trata exceções (pode ser uma exceção de interrupção)
+			e.printStackTrace();
+		}
 	}
 }
