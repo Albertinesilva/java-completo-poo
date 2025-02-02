@@ -32,22 +32,20 @@ Este repositório contém o percurso de formação em Java, abordando desde os c
 
 ## 🏆 Projetos Desenvolvidos
 
-### ♟️ Projeto: Sistema de Jogo de Xadrez 
+### ♟️ Projeto: Sistema de Jogo de Xadrez - [Albert Silva](https://github.com/Albertinesilva/Chess-System-Java). 
 - Composição de objetos, herança e coleções
 - Desenvolvimento em camadas
 - Padrões de projeto
-- [Albert Silva](https://github.com/Albertinesilva/Chess-System-Java).
 
 ### 🖥️ Projeto: Aplicação Desktop com JavaFX e MySQL via JDBC
-- Interface gráfica com JavaFX
-- Acesso a banco de dados com JDBC
 - Padrão MVC (Model-View-Controller)
-- Uso do FXML e SceneBuilder
+- Padrão Camadas
+- FXML e SceneBuilder
 - Tratamento de eventos de UI
-- Padrões de projeto
 - CRUD completo
+- Padrões de projeto
 
-### 🌍 Projeto: Web Services com Spring Boot e JPA / Hibernate
+### 🌍 Projeto: Web Services com Spring Boot e JPA / Hibernate [Albert Silva](https://github.com/Albertinesilva/Web-Services-Tutorial).
 - Arquitetura em camadas
 - Fundamentos da Web e HTTP
 - REST / Web Services
@@ -56,7 +54,7 @@ Este repositório contém o percurso de formação em Java, abordando desde os c
 - Spring Data JPA
 - CRUD completo e tratamento de exceções
 
-### 🗄️ Projeto: Web Services com Spring Boot e NoSQL (MongoDB)
+### 🗄️ Projeto: Web Services com Spring Boot e NoSQL (MongoDB) [Albert Silva](https://github.com/Albertinesilva/WorkShop-Spring-Boot-MongoDB).
 - Modelo de domínio: agregados e desnormalização
 - Padrão DTO
 - Spring Data MongoDB
