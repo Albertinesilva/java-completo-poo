@@ -1,6 +1,6 @@
-<h1 align="center">Curso Java COMPLETO - Programação Orientada a Objetos + Projetos</h1>
+<h1 align="center">Curso Java COMPLETO - Programação Orientada a Objetos + Projetos - Udemy</h1>
 
-# 🚀 Percurso de Formação em Java
+## 🚀 Percurso de Formação em Java
 
 Este repositório contém o percurso de formação em Java, abordando desde os conceitos básicos de programação até o desenvolvimento de aplicações robustas com Spring Boot e bancos de dados relacionais e NoSQL.
 
@@ -76,5 +76,22 @@ Este repositório contém o percurso de formação em Java, abordando desde os c
 - MySQL / H2 / MongoDB
 - Git e GitHub
 
-## 📌 Autor
-[Albert Silva]
+## 📌 Sobre o curso e Projetos
+
+Este curso foi desenvolvido em **Java** e foi ministrado pelo professor [Nélio Alves](https://github.com/acenelio). O objetivo foi proporcionar uma formação completa em desenvolvimento de software, abordando desde conceitos básicos de programação até o desenvolvimento de aplicações robustas utilizando **Spring Boot** e bancos de dados relacionais e **NoSQL**.
+
+Durante o curso, foram abordados:
+- **Lógica de Programação e Algoritmos:** Conceitos fundamentais, estrutura sequencial, condicional e repetitiva.
+- **POO (Programação Orientada a Objetos):** Conceitos fundamentais, herança, polimorfismo, encapsulamento, utilização de construtores e sobrecarga de métodos.
+- **JDBC (Java Database Connectivity):** Desde a conexão inicial com o banco de dados até operações avançadas como consultas, inserções, atualizações, deleções e gerenciamento de transações (commit/rollback).
+- **Segurança em SQL:** Uso de **PreparedStatement** para prevenir **SQL Injection** e implementação de **tratamento de exceções** para maior segurança e robustez da aplicação.
+- **Padrão DAO (Data Access Object):** Organização modular e reutilizável do acesso a dados, separando a lógica de persistência da lógica de negócios, melhorando a estrutura e escalabilidade do código.
+- **Programação Funcional:** Trabalhando com expressões lambda.
+- **Interface Gráfica com JavaFX:** Criação de interfaces gráficas ricas e interativas.
+- **Desenvolvimento de Web Services com Spring Boot:** Arquitetura em camadas, fundamentos da web e HTTP, REST, e integração com bancos de dados relacionais e NoSQL.
+
+Além disso, a aplicação de conhecimentos práticos através de projetos consolida os conceitos aprendidos e prepara para desafios reais no desenvolvimento de software.
+
+## Autor
+
+👤 **Albert Silva**
