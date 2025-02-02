@@ -143,6 +143,7 @@ src/
     └── (tratamento de exceções)
 ```
 🔧 Modificações e Adaptações
+
 Durante o curso, realizei diversas modificações e adaptações nos projetos, incluindo:
 
 - Organização dos Packages: Reestruturação das pastas e arquivos para melhorar a organização e a legibilidade do código.
