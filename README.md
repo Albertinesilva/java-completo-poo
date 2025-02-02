@@ -1,6 +1,6 @@
-<h1 align="center">Curso Java COMPLETO - Programação Orientada a Objetos + Projetos - Udemy</h1>
+<h1 align="center">Curso Java COMPLETO - Programação Orientada a Objetos + Projetos</h1>
 
-## 🚀 Percurso de Formação em Java
+## 🚀 Percurso de Formação em Java - Udemy
 
 Este repositório contém o percurso de formação em Java, abordando desde os conceitos básicos de programação até o desenvolvimento de aplicações robustas com Spring Boot e bancos de dados relacionais e NoSQL.
 
@@ -92,6 +92,6 @@ Durante o curso, foram abordados:
 
 Além disso, a aplicação de conhecimentos práticos através de projetos consolida os conceitos aprendidos e prepara para desafios reais no desenvolvimento de software.
 
-## Autor
+## 📌 Autor
 
 👤 **Albert Silva**
