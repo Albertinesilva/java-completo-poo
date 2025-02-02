@@ -6,6 +6,8 @@ public class Exer02 {
 
 	public static void main(String[] args) {
 
+		cleanScreen();
+
 		int[][] matriz = new int[10][10];
 		Random gerador = new Random();
 
@@ -38,20 +40,36 @@ public class Exer02 {
 		}
 		System.out.println("Maior valor da linha 5: " + maiorL5);
 		System.out.println("Menor valor da linha 5: " + menorL5);
-		
-		for(int c = 0; c < matriz.length; c++) {
-			if(matriz[c][7] > maiorC7) {
+
+		for (int c = 0; c < matriz.length; c++) {
+			if (matriz[c][7] > maiorC7) {
 				maiorC7 = matriz[c][7];
 			}
-			if(matriz[c][7] < menorC7) {
+			if (matriz[c][7] < menorC7) {
 				menorC7 = matriz[c][7];
 			}
-			
+
 		}
-		
+
 		System.out.println("Maior valor da linha 7: " + maiorC7);
 		System.out.println("Menor valor da linha 7: " + menorC7);
 
+	}
+
+	public static void cleanScreen() {
+		try {
+			final String os = System.getProperty("os.name");
+
+			if (os.contains("Windows")) {
+				new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+			} else {
+				System.out.print("\033[H\033[2J");
+				System.out.flush();
+			}
+		} catch (final Exception e) {
+			// Trata exceções (pode ser uma exceção de interrupção)
+			e.printStackTrace();
+		}
 	}
 
 }
