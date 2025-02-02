@@ -3,7 +3,7 @@ package generics.hashcode_equals.hashcode.application;
 public class Program {
   public static void main(String[] args) {
     
-    limparTela();
+    cleanScreen();
     String a = "Maria";
     String b = "Alex";
 
@@ -11,7 +11,7 @@ public class Program {
     System.out.println(b.hashCode());
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

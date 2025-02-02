@@ -22,7 +22,7 @@ public class ConvertendoData {
     // DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
     DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
 
-    limparTela();
+    cleanScreen();
     System.out.println("\n\t============= Convertendo data-hora para texto =============");
 
     // Três formas de fazer a mesma coisa:
@@ -37,7 +37,7 @@ public class ConvertendoData {
     System.out.println("\tData2: " + instante2.toString());
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

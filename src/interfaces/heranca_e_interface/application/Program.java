@@ -7,7 +7,8 @@ import interfaces.heranca_e_interface.model.entities.Circle;
 public class Program {
 
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     AbstractShape s1 = new Circle(Color.BLACK, 2.0);
     AbstractShape s2 = new Circle(Color.WHITE, 3.0);
 
@@ -17,7 +18,7 @@ public class Program {
     System.out.println("Rectangle area: " + String.format("%.3f", s2.area()));
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

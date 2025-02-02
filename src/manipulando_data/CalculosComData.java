@@ -15,7 +15,7 @@ public class CalculosComData {
     LocalDateTime data3 = LocalDateTime.parse("2023-11-14T13:30:10");
     Instant instant = Instant.parse("2023-11-14T00:30:10Z");
 
-    limparTela();
+    cleanScreen();
     System.out.println("\n\t============= Calculos com data =============");
 
     // Calculos com data-hora soma e subtração de dias, meses e anos (com
@@ -58,7 +58,7 @@ public class CalculosComData {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

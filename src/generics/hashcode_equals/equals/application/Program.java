@@ -4,14 +4,14 @@ public class Program {
 
   public static void main(String[] args) {
     
-    limparTela();
+    cleanScreen();
     String a = "Maria";
     String b = "Alex";
 
     System.out.println(a.equals(b));
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

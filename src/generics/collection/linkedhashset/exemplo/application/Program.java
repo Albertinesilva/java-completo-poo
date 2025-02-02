@@ -5,7 +5,8 @@ import java.util.Set;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     // Criando um conjunto (Set) do tipo LinkedHashSet
     // O LinkedHashSet mantém a ordem de inserção dos elementos
     Set<String> set = new LinkedHashSet<>();
@@ -73,7 +74,7 @@ public class Program {
     System.out.println("5. O método clear limpa todos os elementos do conjunto.\n\n");
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

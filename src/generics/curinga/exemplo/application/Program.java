@@ -6,7 +6,8 @@ import java.util.List;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     @SuppressWarnings("unused")// Suprime o aviso de compilação
     // List<Object> não é o supertipo de qualquer tipo de lista:
     List<Object> myObjs = new ArrayList<Object>();
@@ -52,7 +53,7 @@ public class Program {
     }
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

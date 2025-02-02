@@ -7,7 +7,8 @@ import generics.collection.treeset.igualdade.entities.Product;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     Set<Product> set = new TreeSet<>();
 
@@ -23,7 +24,7 @@ public class Program {
     System.out.println();
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

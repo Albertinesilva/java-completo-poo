@@ -8,7 +8,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     
     File file = new File("D:\\UDEMY POO\\projetos-poo-java\\src\\tratamento_de_excecoes\\bloco_finally\\dados\\in.txt");
     Scanner scan = null;
@@ -31,7 +31,7 @@ public class Program {
     }
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

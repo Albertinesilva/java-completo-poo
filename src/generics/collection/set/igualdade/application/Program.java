@@ -7,7 +7,8 @@ import generics.collection.set.igualdade.entities.Product;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     Set<Product> set = new HashSet<>();
 
@@ -20,7 +21,7 @@ public class Program {
     System.out.println("Contém 'Notebook'? " + set.contains(prod) + "\n");
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

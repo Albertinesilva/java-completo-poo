@@ -8,7 +8,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     Locale.setDefault(Locale.US);
     // Account acc1 = new Account(1001, "Alex", 1000.0);
     // Account acc2 = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
@@ -39,7 +39,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

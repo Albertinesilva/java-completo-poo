@@ -5,7 +5,8 @@ import java.util.TreeMap;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     Map<String, String> cookies = new TreeMap<>();
 
     cookies.put("username", "maria");
@@ -27,7 +28,7 @@ public class Program {
     }
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

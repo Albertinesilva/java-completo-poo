@@ -11,7 +11,7 @@ import expressoes_lambda.function.util.UpperCaseName;
 public class Programa {
 
   public static void main(String[] args) {
-    limparTela();
+    cleanScreen();
     List<Product> list = new ArrayList<>();
     list.add(new Product("Tv", 900.00));
     list.add(new Product("Mouse", 50.00));
@@ -48,7 +48,7 @@ public class Programa {
     names3.forEach(System.out::println);
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

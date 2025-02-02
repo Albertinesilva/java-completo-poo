@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class TerminalOperationsExamples {
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
 
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
@@ -66,7 +66,7 @@ public class TerminalOperationsExamples {
     any.ifPresent(value -> System.out.println("Qualquer número: " + value));
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

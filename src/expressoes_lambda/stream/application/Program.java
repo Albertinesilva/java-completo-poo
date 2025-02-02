@@ -9,7 +9,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     Locale.setDefault(Locale.US);
 
     List<Integer> list = Arrays.asList(3, 4, 5, 10, 7);
@@ -48,7 +48,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

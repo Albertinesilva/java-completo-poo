@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Program {
   public static void main(String[] args) {
 
+    cleanScreen();
     Scanner scan = new Scanner(System.in);
-    limparTela();
 
     Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
 
@@ -23,7 +23,7 @@ public class Program {
     scan.close();
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

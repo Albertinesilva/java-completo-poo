@@ -9,7 +9,8 @@ import generics.curinga.exercicio.entities.Shape;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     List<Shape> myShapes = new ArrayList<>();
     // @description Armazenando instâncias de classes concretas (Retangle e Circle) em uma lista
@@ -69,7 +70,7 @@ public class Program {
    * @params Nenhum.
    * @return Nenhum.
    */
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

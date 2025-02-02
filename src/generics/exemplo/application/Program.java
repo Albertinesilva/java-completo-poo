@@ -6,7 +6,8 @@ import generics.exemplo.services.PrintService;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     Scanner sc = new Scanner(System.in);
 
     PrintService<String> ps = new PrintService<>();
@@ -26,7 +27,7 @@ public class Program {
     sc.close();
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

@@ -6,7 +6,8 @@ import java.util.TreeSet;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     // Criação de um conjunto TreeSet do tipo String
     // O TreeSet ordena automaticamente os elementos de forma natural (alfabética para Strings)
@@ -62,7 +63,7 @@ public class Program {
     System.out.println("   - Diferença (Difference): Retém os elementos do primeiro conjunto que não estão no segundo.");
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

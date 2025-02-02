@@ -10,8 +10,8 @@ import expressoes_lambda.predicate.util.ProductPredicate;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
-
+    
+    cleanScreen();
     Locale.setDefault(Locale.US);
     List<Product> list = new ArrayList<>();
     list.add(new Product("Tv", 900.00));
@@ -74,7 +74,7 @@ public class Program {
     list.forEach(System.out::println);
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

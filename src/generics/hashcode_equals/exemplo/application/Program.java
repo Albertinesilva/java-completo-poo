@@ -4,7 +4,8 @@ import generics.hashcode_equals.exemplo.entities.Client;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     // Criação de três objetos do tipo Client com dados similares e diferentes
     Client c1 = new Client("Maria", "maria@gmail.com");
@@ -51,7 +52,7 @@ public class Program {
     System.out.println("4. Strings literais compartilham a mesma referência, enquanto objetos String criados com 'new' não.\n\n");
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

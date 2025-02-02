@@ -7,7 +7,8 @@ import generics.collection.map.exemplo2.entities.Product;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     Map<Product, Double> stock = new HashMap<>();
 
@@ -29,7 +30,7 @@ public class Program {
     System.out.println("\nContains 'ps' key: " + stock.containsKey(ps));
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

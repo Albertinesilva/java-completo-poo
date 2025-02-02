@@ -6,7 +6,8 @@ import java.util.List;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     // Criação de uma lista de inteiros. 'myInts' contém os valores 1, 2, 3 e 4.
     List<Integer> myInts = Arrays.asList(1, 2, 3, 4);
@@ -60,7 +61,7 @@ public class Program {
     System.out.println(); // Após imprimir todos os elementos, pula para a próxima linha
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

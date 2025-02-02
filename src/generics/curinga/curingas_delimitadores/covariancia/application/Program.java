@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     // Criação de uma lista do tipo Integer, que é uma subclasse de Number.
     List<Integer> intList = new ArrayList<Integer>();
@@ -33,7 +34,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

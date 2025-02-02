@@ -7,7 +7,8 @@ import interfaces.heranca_multipla.diveces.ConcreteScanner;
 public class Program {
 
 	public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 		ConcretePrinter p = new ConcretePrinter("1080");
 		p.processDoc("My Letter");
 		p.print("My Letter");
@@ -24,7 +25,7 @@ public class Program {
 		System.out.println("Scan result: " + c.scan());
 	}
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

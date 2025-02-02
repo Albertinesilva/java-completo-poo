@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     // Criação de uma lista do tipo Object, que é o tipo raiz para todos os objetos em Java.
     List<Object> myObjs = new ArrayList<Object>();
@@ -39,7 +40,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

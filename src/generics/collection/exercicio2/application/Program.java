@@ -6,7 +6,8 @@ import java.util.Set;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     Scanner sc = new Scanner(System.in);
 
     Set<Integer> a = new HashSet<>();
@@ -18,11 +19,11 @@ public class Program {
     for (int i = 0; i < n; i++) {
       int number = sc.nextInt();
       if (a.contains(number)) {
-        limparTela();
+        cleanScreen();
         System.out.println("This student ID already exists in the collection.");
       } else {
         a.add(number);
-        limparTela();
+        cleanScreen();
         System.out.println("Student ID added successfully.");
       }
     }
@@ -50,7 +51,7 @@ public class Program {
     sc.close();
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

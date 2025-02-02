@@ -12,7 +12,7 @@ public class Program {
 
   public static void main(String[] args) throws ParseException {
 
-    limparTela();
+    cleanScreen();
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
@@ -62,7 +62,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

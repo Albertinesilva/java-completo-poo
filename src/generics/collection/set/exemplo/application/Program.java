@@ -5,7 +5,8 @@ import java.util.Set;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     // Criando um conjunto HashSet do tipo String
     // O HashSet não mantém a ordem dos elementos, mas garante unicidade
@@ -66,7 +67,7 @@ public class Program {
     System.out.println("3. O método removeIf() utiliza predicados (expressões booleanas) para remover elementos que atendem à condição.\n\n");
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

@@ -10,7 +10,7 @@ import expressoes_lambda.predicate.entities.Product;
 public class Program2 {
 
   public static void main(String[] args) {
-    limparTela();
+    cleanScreen();
     Locale.setDefault(Locale.US);
 
     // Exemplo com expressão lambda inline
@@ -49,7 +49,7 @@ public class Program2 {
     return products;
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

@@ -23,7 +23,7 @@ class ConvertendoDataHoraGlobal {
     LocalDateTime r3 = LocalDateTime.ofInstant(instante, ZoneId.systemDefault());
     LocalDateTime r4 = LocalDateTime.ofInstant(instante, ZoneId.of("Portugal"));
     
-    limparTela();
+    cleanScreen();
     System.out.println("\t=== Convertendo Data/Hora Global Para Local ===\n");
     System.out.println("\tr1 = " + r1);
     System.out.println("\tr2 = " + r2);
@@ -40,7 +40,7 @@ class ConvertendoDataHoraGlobal {
                                    + data3.getSecond());
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

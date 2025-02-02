@@ -7,7 +7,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     Scanner scan = new Scanner(System.in);
 
     try {
@@ -30,7 +30,7 @@ public class Program {
     scan.close();
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

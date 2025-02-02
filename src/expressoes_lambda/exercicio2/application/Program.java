@@ -14,8 +14,8 @@ import expressoes_lambda.exercicio2.entities.Employee;
 public class Program {
 
   public static void main(String[] args) {
-    limparTela();
-
+    
+    cleanScreen();
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
 
@@ -73,7 +73,7 @@ public class Program {
     sc.close();
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

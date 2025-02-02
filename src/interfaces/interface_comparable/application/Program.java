@@ -11,7 +11,8 @@ import interfaces.interface_comparable.entities.Employee;
 
 public class Program {
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     List<Employee> list = new ArrayList<>();
     String path = "D:\\UDEMY POO\\Exercicios\\src\\interfaces\\interface_comparable\\in.txt";
 
@@ -34,7 +35,7 @@ public class Program {
     }
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

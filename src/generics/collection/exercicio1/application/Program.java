@@ -14,7 +14,8 @@ import generics.collection.exercicio1.entities.LogEntry;
 public class Program {
 
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
     Scanner sc = new Scanner(System.in);
 
     // D:\\UDEMY POO\\projetos-poo-java\\src\\generics\\collection\\exercicio1\\temp\\in.txt 
@@ -51,7 +52,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

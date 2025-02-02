@@ -4,7 +4,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     Account acc = new Account(1001, "Alex", 1000.00);
     BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
     acc.withdraw(200.0);
@@ -54,7 +54,7 @@ public class Program {
     System.out.println(y.getBalance());
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

@@ -7,7 +7,7 @@ public class Program {
 
   public static void main(String[] args) throws ParseException {
 
-    limparTela();
+    cleanScreen();
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
     Comment c1 = new Comment("Have a nice trip!");
@@ -36,7 +36,7 @@ public class Program {
     System.out.println(p2);
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

@@ -10,7 +10,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     Locale.setDefault(Locale.US);
 
     // Cria uma lista de inteiros usando Arrays.asList().
@@ -41,7 +41,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

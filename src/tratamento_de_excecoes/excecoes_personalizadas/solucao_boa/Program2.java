@@ -12,7 +12,7 @@ public class Program2 {
 
   public static void main(String[] args) {
 
-    limparTela();
+    cleanScreen();
     Scanner scan = new Scanner(System.in);
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -47,7 +47,7 @@ public class Program2 {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

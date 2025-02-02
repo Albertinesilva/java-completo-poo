@@ -12,7 +12,8 @@ public class Program {
   }
 
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     List<Product> list = new ArrayList<>();
 
@@ -25,7 +26,7 @@ public class Program {
     list.forEach(System.out::println);
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

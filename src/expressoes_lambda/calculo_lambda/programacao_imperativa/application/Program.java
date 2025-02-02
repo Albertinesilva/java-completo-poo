@@ -6,7 +6,8 @@ public class Program {
   public static int globalValue = 3;
 
   public static void main(String[] args) {
-    limparTela(); // Limpa a tela do console
+    
+    cleanScreen(); // limpa a tela do console
     
     int[] vect = new int[] { 3, 4, 5 };
     changeOddValues(vect); // Exemplo de função que não é referencialmente transparente
@@ -21,7 +22,7 @@ public class Program {
     }
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 

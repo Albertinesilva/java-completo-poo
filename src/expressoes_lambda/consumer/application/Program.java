@@ -10,7 +10,8 @@ import expressoes_lambda.consumer.util.PriceUpdate;
 public class Program {
 
   public static void main(String[] args) {
-    limparTela();
+    
+    cleanScreen();
 
     List<Product> list = new ArrayList<>();
 
@@ -52,7 +53,7 @@ public class Program {
 
   }
 
-  public static void limparTela() {
+  public static void cleanScreen() {
     try {
       final String os = System.getProperty("os.name");
 
