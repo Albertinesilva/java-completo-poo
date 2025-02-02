@@ -8,6 +8,7 @@ Este repositório contém o percurso de formação em Java, abordando desde os c
 
 ### 1️⃣ Lógica de Programação e Algoritmos usando Java (Iniciante)
 - Conceitos de programação
+- Introdução à linguagem Java
 - Estrutura sequencial
 - Estrutura condicional
 - Estruturas repetitivas
@@ -17,7 +18,6 @@ Este repositório contém o percurso de formação em Java, abordando desde os c
 - Construtores, palavra this, sobrecarga e encapsulamento
 - Comportamento de memória, arrays e listas
 - Tópicos especiais em Java
-- **Bônus:** Nivelamento sobre Git e GitHub
 - Enumerações e composição
 - Herança e polimorfismo
 - Tratamento de exceções
@@ -27,15 +27,16 @@ Este repositório contém o percurso de formação em Java, abordando desde os c
 - Interfaces
 - Generics, Set, Map
 - Programação funcional e expressões lambda
-- **Bônus:** Nivelamento em Álgebra Relacional, SQL e MySQL
+- Acesso a banco de dados com JDBC [Albert Silva](https://github.com/Albertinesilva/Tutorial-JDBC-Maven-JPA).
 - Interface Gráfica com JavaFX
 
 ## 🏆 Projetos Desenvolvidos
 
-### ♟️ Projeto: Sistema de Jogo de Xadrez
+### ♟️ Projeto: Sistema de Jogo de Xadrez 
 - Composição de objetos, herança e coleções
 - Desenvolvimento em camadas
 - Padrões de projeto
+- [Albert Silva](https://github.com/Albertinesilva/Chess-System-Java).
 
 ### 🖥️ Projeto: Aplicação Desktop com JavaFX e MySQL via JDBC
 - Interface gráfica com JavaFX
