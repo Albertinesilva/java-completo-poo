@@ -1,6 +1,6 @@
 <h1 align="center">Curso Java COMPLETO - Programação Orientada a Objetos + Projetos</h1>
 
-## 🚀 Percurso de Formação em Java - Udemy
+## 🚀Curso Udemy: Percurso de Formação em Java
 
 Este repositório contém o percurso de formação em Java, abordando desde os conceitos básicos de programação até o desenvolvimento de aplicações robustas com Spring Boot e bancos de dados relacionais e NoSQL.
 
