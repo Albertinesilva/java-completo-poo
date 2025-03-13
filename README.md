@@ -59,7 +59,7 @@ Além disso, os conhecimentos adquiridos foram aplicados em **projetos práticos
 
 ---
 
-### 🖥️ Aplicação Desktop com JavaFX e MySQL via JDBC
+### 🖥️ Aplicação Desktop com JavaFX e MySQL via JDBC - [Albert Silva](https://github.com/Albertinesilva/workshop-javafx-jdbc)
 - **Padrão MVC (Model-View-Controller)**
 - FXML e SceneBuilder
 - CRUD completo com banco de dados MySQL
